@@ -1,0 +1,12 @@
+/* Write your CSS here */
+
+.footer {
+  background-color: #cbd5e1;
+}
+
+.heading {
+  font-size: 32px;
+  font-family: 'Roboto';
+  text-align: center;
+  color: #475569;
+}

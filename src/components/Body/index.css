@@ -1,0 +1,30 @@
+/* Write your CSS here */
+
+.body-container {
+  display: flex;
+}
+
+.left {
+  background-color: #e2e8f0;
+  margin: 10px;
+}
+
+.content {
+  background-color: #f1f5f9;
+  margin: 10px;
+}
+
+.list {
+  list-style: none;
+}
+
+.right {
+  background-color: #cbd5e1;
+  margin: 10px;
+}
+
+.ad {
+  border: 1px solid #475569;
+  height: 150px;
+  width: 150px;
+}
