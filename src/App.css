@@ -11,8 +11,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Write your CSS here */
-
-.layout-container {
-  background-color: #475569;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

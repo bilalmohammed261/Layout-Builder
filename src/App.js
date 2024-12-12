@@ -1,4 +1,5 @@
 import {Component} from 'react'
+
 import ConfigurationContext from './context/ConfigurationContext'
 
 import ConfigurationController from './components/ConfigurationController'
@@ -28,25 +29,23 @@ class App extends Component {
 
   render() {
     const {showContent, showLeftNavbar, showRightNavbar} = this.state
-    console.log(showContent, showLeftNavbar, showRightNavbar)
 
     return (
-      <div>
-        {/* This is a comment inside JSX  */}
-        <ConfigurationContext.Provider
-          value={{
-            showContent,
-            showLeftNavbar,
-            showRightNavbar,
-            onToggleShowContent: this.onToggleShowContent,
-            onToggleShowLeftNavbar: this.onToggleShowLeftNavbar,
-            onToggleShowRightNavbar: this.onToggleShowRightNavbar,
-          }}
-        >
+      <ConfigurationContext.Provider
+        value={{
+          showContent,
+          showLeftNavbar,
+          showRightNavbar,
+          onToggleShowContent: this.onToggleShowContent,
+          onToggleShowLeftNavbar: this.onToggleShowLeftNavbar,
+          onToggleShowRightNavbar: this.onToggleShowRightNavbar,
+        }}
+      >
+        <div className="app-container">
           <ConfigurationController />
           <Layout />
-        </ConfigurationContext.Provider>
-      </div>
+        </div>
+      </ConfigurationContext.Provider>
     )
   }
 }

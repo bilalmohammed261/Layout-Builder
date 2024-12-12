@@ -1,9 +1,8 @@
-// Write your code here
 import './index.css'
 
 const Footer = () => (
-  <div className="footer">
-    <h1 className="heading">Footer</h1>
+  <div className="footer-container">
+    <h1 className="footer-text">Footer</h1>
   </div>
 )
 
